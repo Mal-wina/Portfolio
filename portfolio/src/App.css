@@ -29,6 +29,15 @@ body {
   margin: 0;
 }
 
+.nav-links a {
+  text-decoration: none;
+  color:#222;
+}
+
+.nav-links a:hover {
+  color:#f06292;
+}
+
 .menu-button{
   display: none;
 }
@@ -186,6 +195,7 @@ button {
 .project-text h2 {
   font-size: 2.5rem;
   font-weight: 400;
+  color:#222;
 }
 
 .section-title {
