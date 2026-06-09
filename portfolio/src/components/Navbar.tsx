@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -7,6 +6,7 @@ function Navbar() {
         <nav className="navbar">
             <h2>MC.</h2>
 
+            <div className="navbar">
             <button className="menu-button" 
                     onClick={() => setMenuOpen(!menuOpen)}>
                 {menuOpen ? "×" : "☰"}
@@ -14,19 +14,23 @@ function Navbar() {
 
             <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
                 <li>
-                    <Link to="/">Home</Link>
+                    <a href="#home">Home</a>
                 </li>
-                <li>
-                    <Link to="/about">About</Link>
+                 <li>
+                    <a href="#about">About</a>
                 </li>
-                <li>
-                    <Link to="/projects">Projects</Link>
+                 <li>
+                    <a href="#projects">Projects</a>
                 </li>
-                <li>Skills</li>
-                <li>Contact</li>
+                 <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                 <li>
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
-
-            <button>Let's Connect</button>
+           </div> 
+            <button className="connect-button">Let's Connect</button>
         </nav>
     );
 }

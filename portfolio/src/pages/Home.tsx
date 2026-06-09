@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import About from "../components/About"
 import Projects from "../components/Projects";
+import GitHubStats from "../components/GitHubStats";
 
 function Home() {
   return (
@@ -15,6 +16,10 @@ function Home() {
       
       <section id="projects">
         <Projects />
+      </section>
+
+      <section id="github">
+        <GitHubStats />
       </section>
     </>
   );
