@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
 
-import Projects from "./components/Projects";
+import Projects from "./pages/Projects";
 
 import "./App.css";
 
