@@ -298,3 +298,110 @@ button {
 .github-card img{
   width: 100%;
 }
+
+.contact-section {
+  max-width: 1200px;
+  margin:  6rem auto;
+  padding: 0 2rem;
+}
+
+.contact-heading {
+  font-size:4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-heading span {
+  color:#f06292;
+}
+
+.contact-text {
+  text-align: center;
+  color: #666;
+  margin-bottom: 4rem;
+}
+
+.contact-container {
+  background: white;
+  border-radius: 32px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 0.9fr 1.4fr;
+  gap:2rem;
+  box-shadow: 0 15px 40px rgba(240, 98, 146, 0.1);
+}
+
+.contact-info-card{
+  background: #fff7fa;
+  border-radius: 24px;
+  padding: 2rem;
+}
+
+.contact-info-card h3{
+  font-size: 2.3rem;
+  line-height: 1.2;
+}
+
+.contact-info-card h3 span {
+  color:#f06292;
+}
+
+.contact-item {
+  display: flex;
+  gap:1rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.contact-item span {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: white;
+  font-size: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
+}
+
+.input-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:1rem;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding:1rem;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.contact-form textarea {
+  min-height: 220px;
+  resize: none;
+}
+
+@media (max-width: 768px) {
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .input-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-heading {
+    font-size: 2.8rem;
+  }
+
+}
