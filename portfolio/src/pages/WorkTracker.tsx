@@ -8,7 +8,7 @@ const images = [
     "/business-project.png",
 ];
 
-function BusinessWebsite() {
+function WorkTracker() {
 
     const [currentImage, setCurrentImage] = useState(0);
     const nextSlide = () => {
@@ -25,14 +25,13 @@ function BusinessWebsite() {
             <a href="/" className="back-link">← Back to Projects</a>
             <section className="case-layout">
                 <aside className="case-sidebar">
-                    <p className="section-title">Full Stack Project</p>
+                    <p className="section-title">Web App</p>
 
-                    <h1>Business <span>Website</span></h1> 
+                    <h1>Work <span>Tracker</span></h1> 
                     
                     <p>
-                        A modern business website built collaboratively with a fellow student for an electrician company.
-                        It includes a contact form, PostgreSQL database, admin panel
-                        and SMTP MailKit email integration.
+                        A full stack work tracking application built to help the team manage tasks, monitor productivity and track employee work hours efficiently.
+                        The system allows employees to log worked hours per project, manage assigned tasks and view weekly or monthly summaries through a clean and responsive dashboard interface.
                     </p>
 
                     <div className="case-buttons">
@@ -43,9 +42,9 @@ function BusinessWebsite() {
 
                     <div className="project-tags">
                         <span>C# / .NET</span>
+                        <span>Typescript</span>
+                        <span>React</span>
                         <span>PostgreSQL</span>
-                        <span>MailKit</span>
-                        <span>JavaScript</span>
                         <span>HTML/CSS</span>
                         <span>Bootstrap</span>
                     </div>
@@ -53,10 +52,14 @@ function BusinessWebsite() {
                     <h3>Key Features</h3>
 
                     <ul className="case-list">
+                        <li>User authentication and authorization</li>
+                        <li>Task and project management</li>
+                        <li>Employee work hour tracking</li>
+                        <li>Weekly and monthly summaries</li>
+                        <li>Dashboard with statistics and charts</li>
                         <li>Responsive and modern UI</li>
-                        <li>Contact form with database storage</li>
-                        <li>SMTP MailKit email integration</li>
-                        <li>Admin panel for managing inquiries</li>
+                        <li>PostgreSQL database integration</li>
+                        <li>Clean admin and employee workflow</li>
                     </ul>
                 </aside>
 
@@ -90,7 +93,7 @@ function BusinessWebsite() {
                     <Bullseye />
                 </div>
                     <h3>The Goal</h3>
-                    <p>Build a professional website that showcases services and lets clients get in touch.</p>
+                    <p>Build a modern work tracking system that helps teams manage tasks, track hours and stay organized.</p>
                 </div>
 
                 <div className="case-info-card">
@@ -98,7 +101,7 @@ function BusinessWebsite() {
                         <CodeSlash />
                     </div>
                         <h3>What I Learned</h3>
-                        <p>I improved my backend, database and email integration skills.</p>
+                        <p>Improving my React, backend API and database skills while learning how to build dashboards and responsive full stack applications.</p>
                     </div>
 
                 <div className="case-info-card">
@@ -106,7 +109,8 @@ function BusinessWebsite() {
                         <Lightbulb />
                     </div>
                     <h3>Challenges</h3>
-                    <p>Handling email setup, form security and a clean admin experience.</p>
+                    <p>Handling time tracking logic, organizing database relationships and keeping the UI clean while displaying lots of data. 
+                    </p>
                 </div>
             </div>
         </section>
@@ -115,4 +119,4 @@ function BusinessWebsite() {
     );
 }
 
-export default BusinessWebsite;
+export default WorkTracker;

@@ -16,14 +16,16 @@ function Home() {
         <Projects />
       </section>
 
-      <section id="github">
-        <GitHubStats />
-      </section>
+      
 
       <section id="skills">
         <Skills />
       </section>
 
+      <section id="github">
+        <GitHubStats />
+      </section>
+      
       <section id="contact">
         <Contact />
       </section>

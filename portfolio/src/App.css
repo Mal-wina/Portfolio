@@ -114,7 +114,7 @@ html {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem;
+  padding: 0.1rem 4rem;
   gap: 4rem;
 }
 
@@ -264,6 +264,10 @@ button {
   border-radius: 12px;
 }
 
+.read-more-link {
+  text-decoration: none;
+}
+
 /*responive*/
 @media (max-width: 700px) {
   .projects-grid {
@@ -277,7 +281,7 @@ button {
 
 .skills-section {
   max-width: 1200px;
-  margin: 0.1rem auto;
+  margin: 0 auto;
   padding: 0 2rem;
 }
 
@@ -555,7 +559,252 @@ button {
   .contact-info-card {
     padding: 1.5rem;
   }
+}
 
-  
+.case-page {
+  max-width: 1400px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
 
+.back-link {
+  display: inline-block;
+  margin-bottom: 3rem;
+  color: #f06292;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.case-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.6fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.case-sidebar h1 {
+  font-size: 5rem;
+  line-height: 0.95;
+  margin-bottom: 2rem;
+}
+
+.case-sidebar h1 span {
+  color: #f06292;
+}
+
+.case-sidebar p {
+  color: #555;
+  line-height: 1.8;
+}
+
+.case-buttons {
+  margin: 2rem 0;
+}
+
+.case-buttons button {
+  background: #f06292;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 1rem 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.case-sidebar h3 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: #999;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.project-tags span {
+  background: #fff1f6;
+  color: #f06292;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.case-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+
+.case-list li {
+  color: #333;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 2.2rem;
+}
+
+.case-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+
+  background: #f06292;
+  color: white;
+
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+}
+
+.case-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.case-main-image {
+  width: 100%;
+  border-radius: 32px;
+  display: block;
+  box-shadow: 0 20px 50px rgba(240, 98, 146, 0.12);
+}
+
+.case-slider {
+  display: grid;
+  grid-template-columns: 60px 1fr 60px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.slider-arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  color: #f06292;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(240, 98, 146, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+  margin: 0;
+}
+
+
+.case-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.case-thumbnails button {
+  border: 2px solid transparent;
+  background: white;
+  border-radius: 20px;
+  padding: 0.4rem;
+  cursor: pointer;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.case-thumbnails button.active {
+  border-color: #f06292;
+}
+
+.case-thumbnails img {
+  width: 100%;
+  border-radius: 14px;
+  display: block;
+}
+
+.case-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.case-info-card {
+  background: #fff7fa;
+  border-radius: 28px;
+  padding: 2rem;
+  box-shadow: 0 15px 40px rgba(240, 98, 146, 0.12);
+}
+
+.case-info-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 16px;
+  background: #ffe3ee;
+  color: #f06292;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.case-info-card h3 {
+  margin-bottom: 1rem;
+}
+
+.case-info-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 1000px) {
+  .case-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .case-sidebar h1 {
+    font-size: 3.5rem;
+  }
+
+  .case-info-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .case-thumbnails {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .case-page {
+    padding: 0 1rem;
+  }
+
+  .case-sidebar h1 {
+    font-size: 3rem;
+  }
+
+  .case-slider {
+    flex-direction: column;
+  }
+
+  .case-thumbnails {
+    grid-template-columns: 1fr;
+  }
 }
