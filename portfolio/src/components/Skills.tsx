@@ -6,10 +6,6 @@ function Skills() {
 
             <h2 className="skills-heading">What I do <span>Best</span></h2>
 
-            <p className="skills-subtext">
-                Here are the technologies, tools and platforms I work with.
-            </p>
-
             <div className="skills-grid">
                 <div className="skills-card">
                     <div className="skills-icon">
@@ -63,7 +59,7 @@ function Skills() {
                     </div>
 
                     <h3>Tools</h3>
-                    
+
                     <p>
                         Tools and platforms that help me design, develop
                         and collaborate better.
