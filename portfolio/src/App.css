@@ -299,6 +299,12 @@ button {
   width: 100%;
 }
 
+input, 
+textarea,
+button {
+  font-family: inherit;
+}
+
 .contact-section {
   max-width: 1200px;
   margin:  6rem auto;
@@ -350,20 +356,14 @@ button {
   display: flex;
   gap:1rem;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.contact-item span {
-  width: 55px;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: white;
-  font-size: 1.5rem;
+.contact-item i {
+  color:#f06292;
+  font-size: 1.3rem;
 }
-
 .contact-form {
   display: flex;
   flex-direction: column;
