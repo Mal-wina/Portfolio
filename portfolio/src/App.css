@@ -275,6 +275,142 @@ button {
   }
 }
 
+.skills-section {
+  max-width: 1200px;
+  margin: 7rem auto;
+  padding: 0 2rem;
+}
+
+.skills-heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.skills-heading span {
+  color:#f06292;
+}
+
+.skills-subtext {
+  text-align: center;
+  color:#666;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.skills-card {
+  background: white;
+  border-radius: 28px;
+  padding: 2.2rem;
+  box-shadow: 0 15px 40px rgba(240, 98, 146, 0.1);
+}
+
+.skills-card h3 {
+  margin-bottom: 1rem;
+}
+
+.skills-card p {
+  color:#666;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.skills-icon {
+  width: 80px;
+  height: 80px;
+  background: #fff1f6;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.skills-icon svg {
+  font-size: 1.5rem;
+  color:#f06292;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skills-tags span {
+  background: #fff1f6;
+  color: #f06292;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.learning-card {
+  margin-top: 2rem;
+  background: white;
+  border-radius: 28px;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  align-items: center;
+  box-shadow: 0 15px 40px rgba(240, 98, 146, 0.1);
+}
+
+.learning-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.learning-left h3 {
+  margin-bottom: 0.7rem;
+}
+
+.learning-left p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.learning-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.learning-tags span {
+  background: #fff1f6;
+  color: #f06292;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/*mobile*/
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-card {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .skills-heading {
+    font-size: 3rem;
+  }
+}
+
 .github-card{
   background: white;
   padding:2rem;
