@@ -550,6 +550,12 @@ button {
   resize: none;
 }
 
+.form-status {
+  margin-top: 1rem;
+  color: #f06292;
+  font-weight: 600;
+}
+
 @media (max-width: 768px) {
 
   .contact-section {

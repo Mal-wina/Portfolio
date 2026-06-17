@@ -1,5 +1,38 @@
+import { useState } from "react";
 
 function Contact() {
+    const [statusMessage, setStatusMessage] = useState("");
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        const formData = new FormData(e.currentTarget);
+
+        const message = {
+            name: formData.get("name"),
+            email: formData.get("email"),
+            subject: formData.get("subject"),
+            message: formData.get("message"),
+        };
+
+       const response = await fetch(
+        "http://localhost:5019/api/contact",
+        {
+            method:"POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(message),
+        }
+       );
+
+       if (response.ok) {
+            setStatusMessage("Your message has been sent successfully!");
+            } else {
+                setStatusMessage("Something went wrong. Please try again.");
+        }
+    };
+
     return (
         <section id="contact" className="contact-section">
 
@@ -43,17 +76,23 @@ function Contact() {
                     <button>Download CV</button>
                 </div>
 
-                <form className="contact-form">
+                <form className="contact-form" onSubmit={handleSubmit}>
                     <div className="input-row">
-                        <input type="text" placeholder="Your Name" />
-                        <input type="email" placeholder="Your Email" />
+                        <input name="name" type="text" placeholder="Your Name" required/>
+                        <input name="email" type="email" placeholder="Your Email" required />
                     </div>
 
-                    <input type="text" placeholder="Subject" />
+                    <input name="subject" type="text" placeholder="Subject" required/>
 
-                    <textarea placeholder="Your Message"></textarea>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
 
                     <button type="submit">Send Message</button>
+
+                    {statusMessage && (
+                        <p className="form-status">
+                            {statusMessage}
+                        </p>
+                    )}
                 </form>
 
             </div>
