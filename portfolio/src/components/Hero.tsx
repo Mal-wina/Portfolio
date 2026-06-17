@@ -11,13 +11,17 @@ function Hero() {
         </p>
 
         <div className="buttons">
-          <button>View My Work</button>
-          <button className="secondary">Download CV</button>
+          <a href="/#projects" className="primary-btn">
+            View My Work
+          </a>
+          <a href="/cv.pdf" download className="download-btn">
+            Download CV
+          </a>
         </div>
       </div>
 
       <div className="hero-image">
-        <img src="/public/profile.png" alt="Malwina Czajka" />
+        <img src="/public/profilepic.webp" alt="Malwina Czajka" />
       </div>
     </section>
   );

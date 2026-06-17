@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Bullseye, CodeSlash, Lightbulb } from "react-bootstrap-icons";
 
 const images = [
-    "/business-project.png",
-    "/business-project.png",
-    "/business-project.png",
-    "/business-project.png",
+    "/main page.webp",
+    "/services pages.webp",
+    "/previous projects.webp",
+    "/contact form.webp",
 ];
 
 function BusinessWebsite() {

@@ -1,6 +1,5 @@
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
-import GitHubStats from "../components/GitHubStats";
 import Contact from "../components/Contact";
 import Skills from "../components/Skills";
 
@@ -20,10 +19,6 @@ function Home() {
 
       <section id="skills">
         <Skills />
-      </section>
-
-      <section id="github">
-        <GitHubStats />
       </section>
       
       <section id="contact">

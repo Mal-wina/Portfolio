@@ -86,17 +86,17 @@ function Skills() {
                         <h3>Currently Learning</h3>
 
                         <p>
-                            I'm always learning and exploring new technologies
-                            to become a better developer.
+                            I'm currently expanding my skills through new technologies,
+                            backend concepts and the CompTIA A+ certification.
                         </p>
                     </div>
                 </div> 
 
                 <div className="learning-tags">
-                     <span>Docker</span>
+                    <span>CompTIA A+ Certification</span>
+                    <span>Docker</span>
                     <span>Authentication & Security</span>
                     <span>Cloud Deployment</span>
-                    <span>Testing</span>
                     <span>Clean Architecture</span>
                 </div>
             </div>

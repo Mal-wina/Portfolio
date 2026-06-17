@@ -7,7 +7,7 @@ function Projects() {
 
             <div className="projects-grid">
                 <div className="project-card">
-                    <img src="/business-project.png" alt="Business Website" />
+                    <img src="mainpagesmall.png" alt="Business Website" />
 
                     <div className="project-content">
                         <h3>Business Website</h3>
@@ -34,7 +34,7 @@ function Projects() {
                 </div>
 
                 <div className="project-card">
-                    <img src="/admin-panel.png" alt="Work Tracker" />
+                    <img src="/work tracker.webp" alt="Work Tracker" />
 
                     <div className="project-content">
                         <h3>Employee Work Tracker</h3>
