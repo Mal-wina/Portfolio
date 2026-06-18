@@ -1,0 +1,12 @@
+C:\Users\Mal\Documents\GitHub\Portfolio\PortfolioAPI\out\PortfolioAPI.exe
+C:\Users\Mal\Documents\GitHub\Portfolio\PortfolioAPI\out\appsettings.Development.json
+C:\Users\Mal\Documents\GitHub\Portfolio\PortfolioAPI\out\appsettings.json
+C:\Users\Mal\Documents\GitHub\Portfolio\PortfolioAPI\out\PortfolioAPI.dll
+C:\Users\Mal\Documents\GitHub\Portfolio\PortfolioAPI\out\PortfolioAPI.deps.json
+C:\Users\Mal\Documents\GitHub\Portfolio\PortfolioAPI\out\PortfolioAPI.runtimeconfig.json
+C:\Users\Mal\Documents\GitHub\Portfolio\PortfolioAPI\out\PortfolioAPI.pdb
+C:\Users\Mal\Documents\GitHub\Portfolio\PortfolioAPI\out\BouncyCastle.Cryptography.dll
+C:\Users\Mal\Documents\GitHub\Portfolio\PortfolioAPI\out\MailKit.dll
+C:\Users\Mal\Documents\GitHub\Portfolio\PortfolioAPI\out\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Mal\Documents\GitHub\Portfolio\PortfolioAPI\out\Microsoft.OpenApi.dll
+C:\Users\Mal\Documents\GitHub\Portfolio\PortfolioAPI\out\MimeKit.dll
