@@ -81,7 +81,7 @@ function Contact() {
                             </div>
                         </div>
                     </div>
-                    <a href="/cv.pdf" download className="btn">
+                    <a href="/Malwina Czajka_CV.pdf" download className="btn">
                         Download CV
                     </a>
                 </div>
