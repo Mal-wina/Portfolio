@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Github, Envelope } from "react-bootstrap-icons";
 
 function Contact() {
     const [statusMessage, setStatusMessage] = useState("");
@@ -60,7 +61,7 @@ function Contact() {
 
                     <div className="contact-links">
                         <div className="contact-item">
-                            <i className="bi bi-envelope"></i>
+                            <Envelope />
                             <div>
                                 <a href="mailto:malwinapaulinaczajka@gmail.com">
                                     malwinapaulinaczajka@gmail.com
@@ -69,7 +70,7 @@ function Contact() {
                         </div>
 
                         <div className="contact-item">
-                            <i className="bi bi-github"></i>
+                            <Github />
                             <div>
                                 <a
                                     href="https://github.com/Mal-wina"

@@ -628,10 +628,12 @@ button {
   margin-bottom: 2rem;
 }
 
-.contact-item i {
-  color:#f06292;
-  font-size: 1.3rem;
+.contact-item svg {
+    color: #f06292;
+    font-size: 1.4rem;
+    flex-shrink: 0;
 }
+
 .contact-form {
   display: flex;
   flex-direction: column;
