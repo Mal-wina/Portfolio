@@ -62,18 +62,28 @@ function Contact() {
                         <div className="contact-item">
                             <i className="bi bi-envelope"></i>
                             <div>
-                                <p>malwinapaulinaczajka@gmail.com</p>
+                                <a href="mailto:malwinapaulinaczajka@gmail.com">
+                                    malwinapaulinaczajka@gmail.com
+                                </a>
                             </div>
                         </div>
 
                         <div className="contact-item">
                             <i className="bi bi-github"></i>
                             <div>
-                                <p>github.com/Mal-wina</p>
+                                <a
+                                    href="https://github.com/Mal-wina"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    github.com/Mal-wina
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <button>Download CV</button>
+                    <a href="/cv.pdf" download className="btn">
+                        Download CV
+                    </a>
                 </div>
 
                 <form className="contact-form" onSubmit={handleSubmit}>
