@@ -17,7 +17,7 @@ function Contact() {
         };
 
        const response = await fetch(
-        "http://localhost:5019/api/contact",
+        "https://portfolio-z9mw.onrender.com/api/contact",
         {
             method:"POST",
             headers: {
