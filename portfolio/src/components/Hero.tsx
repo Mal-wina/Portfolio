@@ -26,7 +26,7 @@ function Hero() {
       </div>
 
       <div className="hero-image">
-        <img src="/profilepic.webp" alt="Malwina Czajka" />
+        <img src="/profilepic.webp" alt="Malwina Czajka" fetchPriority="high" />
       </div>
     </section>
   );

@@ -33,7 +33,7 @@ function WorkTracker() {
                     </p>
 
                     <div className="case-buttons">
-                        <button>Live Demo(Coming Soon)</button>
+                        <button>Live Demo (In development)</button>
                     </div>
 
                     <h3>Tech Stack</h3>

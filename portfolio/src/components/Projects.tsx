@@ -27,7 +27,7 @@ function Projects() {
                         </div>
 
                         <Link to="/projects/business-website" className="read-more-link">
-                            <button>Read More</button>
+                            <button className="btn">Read More</button>
                         </Link>
 
                     </div>
@@ -53,7 +53,7 @@ function Projects() {
                         </div>
 
                         <Link to="/projects/work-tracker" className="read-more-link">
-                            <button>Read More</button>
+                            <button className="btn">Read More</button>
                         </Link>
                     </div>
                 </div>
