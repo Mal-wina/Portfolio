@@ -308,7 +308,7 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .about-box {
@@ -316,6 +316,7 @@ button {
   border-radius: 28px;
   padding: 2rem;
   text-align: center;
+  height:100%;
 }
 
 .about-box svg {

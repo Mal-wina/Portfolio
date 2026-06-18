@@ -47,8 +47,9 @@ function Projects() {
                         <div className="project-tags">
                             <span>React</span>
                             <span>Typescript</span>
-                            <span>.NET</span>
+                            <span>HTML/CSS</span>
                             <span>PostgreSQL</span>
+                            <span>C# / .NET </span>
                         </div>
 
                         <Link to="/projects/work-tracker" className="read-more-link">

@@ -38,7 +38,7 @@ function About() {
                         <Mortarboard />
                         <h3>Education</h3>
                         <p>Second-year IT student at OsloMet</p>
-                        <p>Master's degree in Psychology</p>
+                        <p>Master's degree in Psychology (Graduated with Distinction)</p>
                     </div>
 
                     <div className="about-box">
