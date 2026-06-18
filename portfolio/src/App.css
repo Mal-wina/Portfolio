@@ -317,6 +317,15 @@ button {
   .about-boxes {
     grid-template-columns: 1fr;
   }
+
+  .about-box {
+    padding: 1.5rem;
+  }
+
+  .about-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 }
 
 .projects-section {
@@ -411,6 +420,19 @@ button {
 
   .projects-heading {
     font-size: 2.3rem;
+  }
+
+  .project-content {
+    padding:1.2rem;
+  }
+
+  .project-content h3{
+    font-size: 2rem;
+  }
+
+  .project-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
   }
 }
 
@@ -540,6 +562,29 @@ button {
 
   .skills-heading {
     font-size: 3rem;
+  }
+
+  .skills-card {
+    padding: 1.5rem;
+  }
+
+  .skills-card p {
+    font-size: 1.7;
+  }
+
+  .about-section,
+  .projects-section,
+  .skills-section,
+  .contact-section {
+    padding: 0 0.75rem;
+  }
+
+  .about-card,
+  .project-card,
+  .skills-card,
+  .contact-container {
+    width: 100%;
+    max-width:100%;
   }
 }
 
@@ -710,6 +755,10 @@ button {
 
   .contact-info-card {
     padding: 1.5rem;
+  }
+
+  .contact-info-card h3 {
+    font-size: 1.8rem;
   }
 }
 
@@ -960,3 +1009,4 @@ button {
     grid-template-columns: 1fr;
   }
 }
+
