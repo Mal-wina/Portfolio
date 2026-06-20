@@ -1020,7 +1020,7 @@ button {
   * {
     outline: 1px solid red;
   }
-  
+
   html, 
   body {
     overflow-x: hidden;
@@ -1035,8 +1035,8 @@ button {
   .contact-section {
     width: 100%;
     max-width: 100%;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding-left: 0;
+    padding-right: 0;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1047,8 +1047,8 @@ button {
   .learning-card,
   .github-card,
   .contact-container {
-    width: 100%;
-    max-width: 100%;
+    width: 95vw;
+    max-width:95vw;
     margin-left: auto;
     margin-right: auto;
   }
