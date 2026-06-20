@@ -15,7 +15,6 @@ function Home() {
         <About />
       </section>
   
-  
       <section id="projects">
         <Projects />
       </section>
