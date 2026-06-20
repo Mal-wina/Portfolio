@@ -1018,7 +1018,6 @@ button {
 
 @media (max-width: 768px) {
   body {
-    width: 100%;
     overflow-x: hidden;
   }
 
@@ -1028,10 +1027,12 @@ button {
   .skills-section,
   .github-section,
   .contact-section {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    width: 100vw;
+    max-width: 100vw;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .about-card,
@@ -1039,42 +1040,33 @@ button {
   .skills-card,
   .learning-card,
   .github-card,
-  .contact-container,
-  .contact-info-card,
-  .contact-form {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .about-card,
   .contact-container {
-    padding: 1.2rem;
+    width: calc(100vw - 1.5rem);
+    max-width: calc(100vw - 1.5rem);
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .about-boxes,
-  .projects-grid,
-  .skills-grid {
-    width: 100%;
-    grid-template-columns: 1fr;
-  }
-
+  .contact-info-card,
+  .contact-form,
   .about-box {
     width: 100%;
     max-width: 100%;
   }
 
-  .learning-card {
-    padding: 1.5rem;
+  .contact-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
   }
 
-  .contact-item {
-    flex-direction: row;
-    align-items: center;
-    overflow-wrap: anywhere;
+  .about-card {
+    grid-template-columns: 1fr;
+    padding: 1rem;
   }
 
-  .contact-item a {
-    overflow-wrap: anywhere;
-    word-break: break-word;
+  .projects-grid,
+  .skills-grid,
+  .about-boxes {
+    grid-template-columns: 1fr;
   }
 }
