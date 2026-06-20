@@ -1017,8 +1017,14 @@ button {
 }
 
 @media (max-width: 768px) {
+  * {
+    outline: 1px solid red;
+  }
+  
+  html, 
   body {
     overflow-x: hidden;
+    width:100%;
   }
 
   .hero,
@@ -1027,12 +1033,12 @@ button {
   .skills-section,
   .github-section,
   .contact-section {
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .about-card,
@@ -1041,8 +1047,8 @@ button {
   .learning-card,
   .github-card,
   .contact-container {
-    width: calc(100vw - 1.5rem);
-    max-width: calc(100vw - 1.5rem);
+    width: 100%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
