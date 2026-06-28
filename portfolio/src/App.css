@@ -994,6 +994,13 @@ button {
 }
 
 @media (max-width: 768px) {
+
+  .case-main {
+    width:100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
   .case-page {
     width: 100%;
     max-width: 100%;
@@ -1058,6 +1065,7 @@ button {
   .case-info-grid {
     display: grid;
     grid-template-columns: 1fr !important;
+    width:100%;
   }
 }
 
