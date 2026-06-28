@@ -1001,20 +1001,74 @@ button {
 
   .case-page {
     padding: 0 1rem;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+    margin: 3rem auto;
+    overflow-x: hidden;
+  }
+
+  .case-page * {
+    min-width: 0;
+  }
+
+   .case-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .case-sidebar h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
+    line-height: 1.05;
+    overflow-wrap: break-word;
+  }
+
+  .case-sidebar p {
+    font-size: 1rem;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+  }
+
+  .case-buttons button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .case-main {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .case-main-image {
+    width: 100%;
+    height: auto;
   }
 
   .case-slider {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
+    gap: 0.5rem;
+  }
+
+  .slider-arrow {
+    width: 44px;
+    height: 44px;
   }
 
   .case-thumbnails {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .case-info-grid {
     grid-template-columns: 1fr;
   }
+
+  .project-tags {
+    max-width: 100%;
+  }
 }
+
 @media (max-width: 768px) {
   html,
   body,
