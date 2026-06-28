@@ -43,6 +43,7 @@ public class ContactController : ControllerBase
         try
         {
             using var smtp = new SmtpClient();
+            smtp.Timeout = 10000;
 
             await smtp.ConnectAsync("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
             await smtp.AuthenticateAsync(emailAddress, emailPassword);
