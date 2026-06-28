@@ -1015,18 +1015,13 @@ button {
     grid-template-columns: 1fr;
   }
 }
-
-
 @media (max-width: 768px) {
   html,
-  body {
+  body,
+  #root {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-  }
-
-  body {
-    position: relative;
   }
 
   .hero,
@@ -1037,9 +1032,9 @@ button {
   .contact-section {
     width: 100%;
     max-width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    overflow-x: hidden;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    margin: 3rem auto;
   }
 
   .hero *,
@@ -1052,36 +1047,50 @@ button {
   }
 
   .about-card,
-  .contact-container,
   .project-card,
   .skills-card,
   .learning-card,
   .github-card,
-  .contact-info-card,
-  .contact-form {
+  .contact-container {
     width: 100%;
     max-width: 100%;
-    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .about-card,
+  .contact-container {
+    padding: 1rem;
+  }
+
+  .contact-info-card,
+  .skills-card,
+  .learning-card,
+  .project-content,
+  .about-box {
+    padding: 1.25rem;
+  }
+
+  .about-card,
+  .contact-container,
+  .projects-grid,
+  .skills-grid,
+  .about-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .input-row {
+    grid-template-columns: 1fr;
   }
 
   .about-text h2,
   .contact-heading,
-  .contact-info-card h3,
   .skills-heading {
-    max-width: 100%;
-    overflow-wrap: break-word;
-    word-break: normal;
-  }
-
-  .about-text h2 {
     font-size: 2.4rem;
+    line-height: 1.1;
   }
 
-  .contact-heading {
-    font-size: 2.8rem;
-  }
-
-  .contact-info-card h3 {
+  .contact-info-card h3,
+  .project-content h3 {
     font-size: 1.8rem;
   }
 
@@ -1091,14 +1100,5 @@ button {
     max-width: 100%;
     overflow-wrap: anywhere;
     word-break: break-word;
-  }
-
-  .buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn {
-    max-width: 100%;
   }
 }
