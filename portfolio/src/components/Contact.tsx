@@ -27,10 +27,13 @@ function Contact() {
         }
        );
 
+       const text = await response.text();
+
        if (response.ok) {
             setStatusMessage("Your message has been sent successfully!");
+            e.currentTarget.reset();
             } else {
-                setStatusMessage("Something went wrong. Please try again.");
+                setStatusMessage(text || "Something went wrong. Please try again.");
         }
     };
 
