@@ -4,9 +4,21 @@ import { Github, Envelope } from "react-bootstrap-icons";
 function Contact() {
     const [statusMessage, setStatusMessage] = useState("");
 
-    const handleSubmit = () => {
-        setStatusMessage("Your message has been sent successfully!");
-    };
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  const form = e.currentTarget;
+  const formData = new FormData(form);
+
+  await fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData as any).toString(),
+  });
+
+  setStatusMessage("Your message has been sent successfully!");
+  form.reset();
+};
 
     return (
         <section id="contact" className="contact-section">
