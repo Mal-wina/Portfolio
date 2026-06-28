@@ -4,37 +4,8 @@ import { Github, Envelope } from "react-bootstrap-icons";
 function Contact() {
     const [statusMessage, setStatusMessage] = useState("");
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-
-        const formData = new FormData(e.currentTarget);
-
-        const message = {
-            name: formData.get("name"),
-            email: formData.get("email"),
-            subject: formData.get("subject"),
-            message: formData.get("message"),
-        };
-
-       const response = await fetch(
-        "https://portfolio-z9mw.onrender.com/api/contact",
-        {
-            method:"POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(message),
-        }
-       );
-
-       const text = await response.text();
-
-       if (response.ok) {
-            setStatusMessage("Your message has been sent successfully!");
-            e.currentTarget.reset();
-            } else {
-                setStatusMessage(text || "Something went wrong. Please try again.");
-        }
+    const handleSubmit = () => {
+        setStatusMessage("Your message has been sent successfully!");
     };
 
     return (
@@ -90,7 +61,9 @@ function Contact() {
                     </a>
                 </div>
 
-                <form className="contact-form" onSubmit={handleSubmit}>
+                <form name="contact" method="POST" data-netlify="true" className="contact-form" onSubmit={handleSubmit}>
+                    
+                    <input type="hidden" name="form-name" value="contact" />
                     <div className="input-row">
                         <input name="name" type="text" placeholder="Your Name" required/>
                         <input name="email" type="email" placeholder="Your Email" required />
