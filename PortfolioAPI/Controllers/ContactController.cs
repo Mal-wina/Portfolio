@@ -45,7 +45,7 @@ public class ContactController : ControllerBase
             using var smtp = new SmtpClient();
             smtp.Timeout = 10000;
 
-            await smtp.ConnectAsync("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
+            await smtp.ConnectAsync("smtp.gmail.com", 465, SecureSocketOptions.StartTls);
             await smtp.AuthenticateAsync(emailAddress, emailPassword);
             await smtp.SendAsync(email);
             await smtp.DisconnectAsync(true);
